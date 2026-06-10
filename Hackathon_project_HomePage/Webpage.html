@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LastResort AI</title>
+    <link rel="stylesheet" href="WebPage.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LastResort AI</a>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#workflow-builder">Workflow Builder</a>
+            <a href="/games">Games Node</a>
+            <a href="#domains">Domains</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <img src="pexels-tomas-malik-793526-27245741.jpg" alt="dramatic lava landscape" class="imgTop">
+            <div class="info">
+                <p class="first">WELCOME TO</p>
+                <p class="second"><span>LASTRESORT</span> AI</p>
+                <p class="third"><span data-content="ANTI-BASIC">ANTI-BASIC</span> GUIDES</p>
+                <div>
+                    <a class="Launcher" href="#workflow-builder">Build guide</a>
+                    <a class="trailer" href="/games">View games node</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container2">
+            <div class="content2">
+                <p class="top"><span>SETUP SCAN</span> + SELF-HEALING LOOP</p>
+                <p class="big">Tired of<br><span>Aimless</span> Wandering?</p>
+                <p class="medium">Generate environment-aware install pipelines with exact commands, paths, validation checks, and recovery steps.</p>
+                <a class="start" href="#workflow-builder">Start my journey</a>
+                <p class="small">The backend prompt engine is connected below.</p>
+            </div>
+        </section>
+
+        <section class="workflow-builder" id="workflow-builder">
+            <div class="workflow-copy">
+                <p class="top"><span>SEARCH FOR THE PROBLEM</span></p>
+                <h1>Generate the exact technical pipeline.</h1>
+                <p>
+                    This MVP sends your goal, selected domain, control filters, and hardware profile to the
+                    LastResort AI prompt engine. The response is a model-ready JSON request that forces
+                    advanced, environment-specific output instead of generic overviews.
+                </p>
+            </div>
+
+            <form class="workflow-form" data-workflow-form>
+                <label>
+                    Complex goal
+                    <textarea name="goal" required placeholder="Example: Set up DaVinci Resolve proxy workflow on an integrated GPU with exact cache paths and validation checks."></textarea>
+                </label>
+
+                <label>
+                    Environment preset
+                    <select name="profilePreset">
+                        <option value="windows">Windows gaming/editing rig</option>
+                        <option value="macos">macOS creator machine</option>
+                        <option value="linux">Linux workstation</option>
+                    </select>
+                </label>
+
+                <label>
+                    Optional custom environment JSON
+                    <textarea name="environmentProfile" placeholder='{"os":{"name":"Windows","version":"11","arch":"x64"},"hardware":{"ramGb":32,"gpu":{"vendor":"NVIDIA","model":"RTX 4070","driverVersion":"555.99"}}}'></textarea>
+                </label>
+
+                <div class="filter-grid" aria-label="Control filters">
+                    <label><input type="checkbox" name="launchers" checked> Launchers</label>
+                    <label><input type="checkbox" name="performance" checked> Performance</label>
+                    <label><input type="checkbox" name="essentials" checked> Essentials</label>
+                    <label><input type="checkbox" name="environment" checked> Environment</label>
+                    <label><input type="checkbox" name="cheats"> Shortcuts</label>
+                </div>
+
+                <button class="start" type="submit">Generate advanced guide request</button>
+            </form>
+
+            <pre class="workflow-result" data-workflow-result data-state="idle">Generated prompt request will appear here.</pre>
+        </section>
+
+        <section class="container3">
+            <div class="content3">
+                <p>Core stack</p>
+                <p>Static prototype plus a Node API, prompt engine, and Postgres-ready schema.</p>
+                <div class="gallery">
+                    <div class="card" id="leftCard">
+                        <img src="vecteezy_the-html5-logo-with-the-number-5-in-the-center_66386005.png" alt="HTML5" class="imgH">
+                        <div class="description">HTML 5</div>
+                    </div>
+                    <div class="card" id="centerCard">
+                        <img src="css.png" alt="CSS" class="img">
+                        <div class="description">CSS</div>
+                    </div>
+                    <div class="card" id="rightCard">
+                        <img src="javascript.webp" alt="Javascript" class="img">
+                        <div class="description">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container4" id="domains">
+            <div class="content4">
+                <button class="autoBlur selected-domain" data-domain="games">GAMES</button>
+                <button class="autoBlur" data-domain="programming">PROGRAMMING</button>
+                <button class="autoBlur" data-domain="blender">BLENDER</button>
+                <button class="autoBlur" data-domain="editing">EDITING</button>
+                <button class="autoBlur" data-domain="aob">AOB</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <marquee behavior="" direction="rtl">Warning! This website is still in its alpha state and complaints and suggestions can be sent to our group via Discord. Thank you for supporting us.</marquee>
+    </footer>
+    <script src="lastresort-client.js"></script>
+</body>
+</html>

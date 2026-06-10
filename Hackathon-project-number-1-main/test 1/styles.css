@@ -1,0 +1,601 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.word-container{
+  margin-left: 40px;
+}
+.image-text{
+  font-size: 3em;
+  color: aliceblue;
+}
+.first{
+  color: #b74b4b;
+  font-size: 6rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.second{
+  color: #b74b4b;
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 9px;
+}
+.second span{
+  color: white;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+.header-container-positioning {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-radius: 0 0 20px 20px;
+}
+.header-link {
+  padding: 30px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  text-align: center;
+  color: rgb(224, 218, 220);
+  font-size: 2em;
+}
+.header-link:hover {
+  border-bottom: 2px solid red;
+  border-radius: 0 0 20px 20px;
+  transition: scale(1.2);
+  transition: 0.2s ease;
+}
+
+.image-container {
+  width: 100%;
+  height: 100vh;
+  background-image:
+    linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 1) 0%,
+         rgba(0, 0, 0, 0) 50%,
+         rgba(0, 0, 0, 1) 100%),
+         url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.launcher-container-positioning{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.launcher-container{
+
+  color: bisque;
+}
+.launcher-header-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.sentance1{
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.sentance2{
+  font-size: 22px;
+}
+.actuallaunchers{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prismcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.prismlaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prismLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prismLauncher img{
+  width: 350px;
+  height: 350px;
+}
+.prismlauncherbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(224, 224, 221);
+  font-size: 20px;
+  color: rgb(63, 61, 59);
+}
+.skcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.sklaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skLauncher img{
+  width: 350px;
+  height: 350px;
+}
+.sklauncherbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(150, 67, 228);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.tcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.TLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tlaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.TLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);
+}
+.tlauncherbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(59, 114, 232);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.title{
+  font-size: 35px;
+  color: rgb(210, 161, 255);
+}
+.prism_launcher_description{
+  font-size: 20px;
+}
+.sk_launcher_description{
+  font-size: 20px;
+}
+.T_launcher_description{
+  font-size: 20px;
+}
+
+
+
+
+
+.performance-container-positioning{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2000px;
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+}
+.performance-container{
+
+  color: bisque;
+}
+.performance-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.sentance1{
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.sentance2{
+  font-size: 22px;
+}
+.performance-mods{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 600px;
+}
+
+
+.sodiumcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.sodiumlaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.sodiumLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sodiumLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);
+}
+.sodiumbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(224, 224, 221);
+  font-size: 20px;
+  color: rgb(63, 61, 59);
+}
+.lithiumcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.lithiumlaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.lithiumLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lithiumLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);  
+}
+.lithiumbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(150, 67, 228);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.iriscontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.irisLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iriscontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.irisLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);
+}
+.irisbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(59, 114, 232);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.title{
+  font-size: 35px;
+  color: rgb(210, 161, 255);
+}
+.sodium_description{
+  font-size: 20px;
+}
+.lithium_description{
+  font-size: 20px;
+}
+.iris_description{
+  font-size: 20px;
+}
+
+
+
+
+.fabriccontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.fabriclaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.fabricLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fabricLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);
+}
+.fabricbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(224, 224, 221);
+  font-size: 20px;
+  color: rgb(63, 61, 59);
+}
+.fabricAPIcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.fabricAPIlaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.fabricAPILauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fabricAPILauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);  
+}
+.fabricAPIbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(150, 67, 228);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.koltincontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.koltinLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.koltincontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.koltinLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);
+}
+.koltinbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(59, 114, 232);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.title{
+  font-size: 35px;
+  color: rgb(210, 161, 255);
+}
+.fabric_description{
+  font-size: 20px;
+}
+.fabricAPI_description{
+  font-size: 20px;
+}
+.koltin_description{
+  font-size: 20px;
+}
+
+
+
+
+
+.emfcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.emflaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.emfLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emfLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);
+}
+.emfbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(224, 224, 221);
+  font-size: 20px;
+  color: rgb(63, 61, 59);
+}
+.etfcontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.etflaunchercontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.etfLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.etfLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);  
+}
+.etfbutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(150, 67, 228);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.continuitycontainer{
+
+  margin: 15px;
+  width: 400px;
+  height: 700px;
+}
+.continuityLauncher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.continuitycontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.continuityLauncher img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transform: translateY(30px);
+}
+.continuitybutton{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: rgb(59, 114, 232);
+  font-size: 20px;
+  color: antiquewhite;
+}
+.title{
+  font-size: 35px;
+  color: rgb(210, 161, 255);
+}
+.emf_description{
+  font-size: 20px;
+}
+.etf_description{
+  font-size: 20px;
+}
+.continuity_description{
+  font-size: 20px;
+}
