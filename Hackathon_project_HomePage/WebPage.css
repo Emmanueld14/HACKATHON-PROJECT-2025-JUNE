@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 65%;
+}
+body{
+    width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    color: rgb(164, 164, 164);
+}
+header{
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav a{
+    font-size: 1.8rem;
+    color: rgb(220, 220, 220);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: .3s ease;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.info{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+.imgTop{
+    height: auto;
+    width: 600px;
+    margin-top: 60px;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+.first{
+    color: #b74b4b;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.second{
+    color: #b74b4b;
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 9px;
+}
+.second span{
+    color: white;
+}
+.third{
+    font-size: 6rem;
+    font-weight: 900;
+}
+.third span{
+    color: transparent;
+    position: relative;
+}
+.third span::after{
+    content: attr(data-content);
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: 2;
+    -webkit-text-stroke: 2px rgb(183, 75, 75);
+    color: transparent;
+}
+
+.Launcher{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: black;
+    background-color: #b74b4b;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 150px;
+}
+.trailer{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 150px;
+}
+
+
+
+.container2{
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+}
+.content2{
+    text-align: center;
+}
+.top{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.top span{
+    color: #b74b4b;
+}
+.big{
+    font-size: 10rem;
+    margin-bottom: 50px;
+}
+.big span{
+    color: #b74b4b;
+}
+.medium{
+    font-size: 2rem;
+}
+.start{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 2em;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #b74b4b;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.small{
+    font-size: 1.5rem;
+}
+
+.workflow-builder{
+    display: grid;
+    grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1fr);
+    gap: 30px;
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto 160px;
+    padding: 40px;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgba(183, 75, 75, 0.45);
+    border-radius: 24px;
+}
+.workflow-copy h1{
+    color: white;
+    font-size: 5rem;
+    line-height: 1.05;
+    margin-bottom: 24px;
+}
+.workflow-copy p{
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+.workflow-form{
+    display: grid;
+    gap: 18px;
+}
+.workflow-form label{
+    display: grid;
+    gap: 8px;
+    color: white;
+    font-size: 1.6rem;
+}
+.workflow-form textarea,
+.workflow-form select{
+    width: 100%;
+    min-height: 90px;
+    padding: 14px;
+    color: white;
+    background-color: rgb(9, 9, 9);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    resize: vertical;
+}
+.workflow-form select{
+    min-height: auto;
+}
+.filter-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+}
+.filter-grid label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 12px;
+}
+.workflow-result{
+    grid-column: 1 / -1;
+    max-height: 420px;
+    overflow: auto;
+    padding: 24px;
+    color: rgb(230, 230, 230);
+    background-color: rgb(6, 6, 6);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    white-space: pre-wrap;
+}
+.workflow-result[data-state="error"]{
+    border-color: rgb(238, 95, 95);
+}
+.workflow-result[data-state="success"]{
+    border-color: rgb(95, 238, 143);
+}
+
+
+
+.container3{
+    width: 100%;
+    height: auto;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.content3{
+    margin-top: 100px;
+    
+}
+.content3 p:nth-child(1){
+    color: #b74b4b;
+    font-size: 2rem;
+}
+.content3 p:nth-child(2){
+    font-size: 3.5rem;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+}
+.card{
+    width: 600px;
+    margin: 5px;
+}
+.img{
+    width: 550px;
+    height: auto;
+    border-radius: 20px;
+}
+.imgH{
+    width: 400px;
+    height: auto;
+}
+.description{
+    padding: 25px;
+    text-align: center;
+}
+
+.container4{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.content4{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 6rem;
+    line-height: 2.5cm;
+    font-weight: 600;
+}
+.autoBlur{
+    color: rgb(220, 220, 220);
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+    animation: blur linear both;
+    animation-timeline: view(50% auto);
+}
+.autoBlur:hover,
+.selected-domain{
+    color: #b74b4b;
+}
+@keyframes blur {
+    0%{
+        filter: blur(20px);
+    }
+    35%, 45% {
+        filter: blur(0px);
+    }
+    70%{
+        filter: blur(20px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+
+.footer{
+    font-size: medium;
+}
+
+@media (max-width: 900px){
+    header,
+    .container,
+    .gallery{
+        flex-direction: column;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .imgTop{
+        width: min(90vw, 600px);
+        margin-left: 0;
+    }
+
+    .info{
+        margin: 40px 20px;
+    }
+
+    .workflow-builder{
+        grid-template-columns: 1fr;
+    }
+}
