@@ -60,7 +60,7 @@ test("guide prompt enforces advanced environment-aware output", () => {
   assert.match(request.messages[0].content, /Do not provide generic introductions/);
   assert.match(request.messages[0].content, /Do not invent flags/);
   assert.match(request.messages[1].content, /RTX 4070/);
-  assert.match(request.messages[1].content, /Performance/);
+  assert.match(request.messages[1].content, /performance/);
   assert.match(request.messages[1].content, /outputSchema/);
 });
 
